@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> AMANSUR TRAVEL AGENCY </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="file.js">
+    
+  </script>
+</head>
+<body background="pexels-engin-akyurt-1435752.png">
+    <header>
+        <nav>
+            <img src="logo4.png" alt="" class="logo-image">
+            <ul>
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="AboutUs.html"> About Us </a></li>
+                <li><a href="services.html" class="active"> Our Services </a></li>
+                <li><a href="Contact.html"> Contact Us </a></li>
+                <li><a href="RegistrationForm.html"> Registration Form </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="flightbookings">
+        <h2>Flight Bookings</h2>
+        <p>Book domestic and international flights at competitive prices. We partner with major airlines to offer you a wide range of options for your travel needs.</p>
+        
+        <form class="flight-booking-form">
+          <label for="from">From:</label>
+          <input type="text" id="from" name="from" required>
+    
+          <label for="to">To:</label>
+          <input type="text" id="to" name="to" required>
+    
+          <label for="depart-date">Departure Date:</label>
+          <input type="date" id="depart-date" name="depart-date" required>
+    
+          <label for="return-date">Return Date:</label>
+          <input type="date" id="return-date" name="return-date">
+    
+          <label for="passengers">Passengers:</label>
+          <input type="text" id="passengers-number" name="passengers-number" placeholder="Number of passengers">
+    
+          <button type="submit" value="fData" class="btn" onclick="getBooks()"/> Search Flights </button>
+        </form>
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2023 AMANSUR TRAVEL AGENCY. All rights reserved.</p>
+    </footer>
+
+
+</body>

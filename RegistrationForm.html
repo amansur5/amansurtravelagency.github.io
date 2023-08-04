@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> AMANSUR TRAVEL AGENCY </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="file.js">
+    
+  </script>
+</head>
+<body background="pexels-engin-akyurt-1435752.png">
+    <header>
+        <nav>
+            <img src="logo4.png" alt="" class="logo-image">
+            <ul>
+                <li><a href="home.html"> Home </a></li>
+                <li><a href="AboutUs.html"> About Us </a></li>
+                <li><a href="services.html"> Our Services </a></li>
+                <li><a href="Contact.html"> Contact Us </a></li>
+                <li><a href="RegistrationForm.html" class="active"> Registration Form </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-container">
+        <h2>Registration Form</h2>
+        <form class="registration-form">
+          <table>
+            <tr>
+              <td><label for="first-name">First Name:</label></td>
+              <td><input type="text" id="first-name" name="first-name" required></td>
+            </tr>
+            <tr>
+              <td><label for="second-name">Second Name:</label></td>
+              <td><input type="text" id="second-name" name="second-name" required></td>
+            </tr>
+            <tr>
+              <td><label for="last-name">Last Name:</label></td>
+              <td><input type="text" id="last-name" name="last-name" required></td>
+            </tr>
+            <tr>
+              <td><label for="age">Age:</label></td>
+              <td><input type="number" id="age" name="age" required></td>
+            </tr>
+            <tr>
+              <td><label for="phone">Phone Number:</label></td>
+              <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+              <td><label for="passport">Passport Number:</label></td>
+              <td><input type="text" id="passport" name="passport" required></td>
+            </tr>
+            <tr>
+              <td><label>Gender:</label></td>
+              <td>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                
+                <label for="other">Other</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                
+              </td>
+            </tr>
+            <tr>
+                <td><label for="interests"> Interests:</label></td>
+                <td>
+                    <label for="beach"> Beach </label>
+                    <input type="checkbox" id="beach" name="interests" value="Beach">
+                    
+                    <label for="Mountains"> Mountains </label>
+                    <input type="checkbox" id="Mountains" name="interests" value="Mountains">
+                    
+                    <label for="adventure">Adventure</label>
+                    <input type="checkbox" id="adventure" name="interests" value="adventure">
+                </td>
+            </tr>
+            <tr>
+              <td><label for="state">State:</label></td>
+              <td>
+                <select id="state" name="state" required>
+                    <option value="" disabled selected>Select State</option>
+                    <option value="Abia">Abia</option>
+                    <option value="Adamawa">Adamawa</option>
+                    <option value="Akwa Ibom">Akwa Ibom</option>
+                    <option value="Anambra">Anambra</option>
+                    <option value="Bauchi">Bauchi</option>
+                    <option value="Bayelsa">Bayelsa</option>
+                    <option value="Benue">Benue</option>
+                    <option value="Borno">Borno</option>
+                    <option value="Cross River">Cross River</option>
+                    <option value="Delta">Delta</option>
+                    <option value="Ebonyi">Ebonyi</option>
+                    <option value="Edo">Edo</option>
+                    <option value="Ekiti">Ekiti</option>
+                    <option value="Enugu">Enugu</option>
+                    <option value="FCT">Federal Capital Territory (FCT)</option>
+                    <option value="Gombe">Gombe</option>
+                    <option value="Imo">Imo</option>
+                    <option value="Jigawa">Jigawa</option>
+                    <option value="Kaduna">Kaduna</option>
+                    <option value="Kano">Kano</option>
+                    <option value="Katsina">Katsina</option>
+                    <option value="Kebbi">Kebbi</option>
+                    <option value="Kogi">Kogi</option>
+                    <option value="Kwara">Kwara</option>
+                    <option value="Lagos">Lagos</option>
+                    <option value="Nasarawa">Nasarawa</option>
+                    <option value="Niger">Niger</option>
+                    <option value="Ogun">Ogun</option>
+                    <option value="Ondo">Ondo</option>
+                    <option value="Osun">Osun</option>
+                    <option value="Oyo">Oyo</option>
+                    <option value="Plateau">Plateau</option>
+                    <option value="Rivers">Rivers</option>
+                    <option value="Sokoto">Sokoto</option>
+                    <option value="Taraba">Taraba</option>
+                    <option value="Yobe">Yobe</option>
+                    <option value="Zamfara">Zamfara</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="local-government">Local Government:</label></td>
+              <td>
+                <select id="local-government" name="local-government" required>
+                  <option value="" disabled selected>Select Local Government</option>
+                  <option value="Musawa">Musawa</option>
+                </select>
+              </td>
+            </tr>
+            <!-- <tr>
+                <td>
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests" rows="4" cols="50"></textarea>
+                </td>
+            </tr> -->
+          </table>
+          <button type="submit" value="data" class="btn" onclick="getData()"/> Submit </button>
+        </form>
+      </div>
+
+    <footer>
+        <p>&copy; 2023 AMANSUR TRAVEL AGENCY. All rights reserved.</p>
+    </footer>
+</body>
